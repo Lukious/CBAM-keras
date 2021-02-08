@@ -10,20 +10,18 @@ from __future__ import division
 
 import warnings
 
-from keras.models import Model
-from keras.layers.core import Dense, Lambda
-from keras.layers.advanced_activations import LeakyReLU
-from keras.layers.convolutional import Conv2D
-from keras.layers.pooling import GlobalAveragePooling2D, GlobalMaxPooling2D, MaxPooling2D
-from keras.layers import Input
-from keras.layers.merge import concatenate, add
-from keras.layers.normalization import BatchNormalization
-from keras.regularizers import l2
-from keras.utils.layer_utils import convert_all_kernels_in_model
-from keras.utils.data_utils import get_file
-from keras.engine.topology import get_source_inputs
-from keras.applications.imagenet_utils import _obtain_input_shape
-import keras.backend as K
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Dense, Lambda
+from tensorflow.keras.layers import Activation
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import GlobalAveragePooling2D, GlobalMaxPooling2D, MaxPooling2D
+from tensorflow.keras.layers import Input
+from tensorflow.keras.layers import concatenate, add
+from tensorflow.keras.layers import BatchNormalization
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras.utils import get_source_inputs
+from tensorflow.keras_applications.imagenet_utils import _obtain_input_shape
+import tensorflow.keras.backend as K
 
 from models.attention_module import attach_attention_module
 

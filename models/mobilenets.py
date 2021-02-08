@@ -11,26 +11,26 @@ from __future__ import division
 
 import warnings
 
-from keras.models import Model
-from keras.layers import Input
-from keras.layers import Activation
-from keras.layers import Dropout
-from keras.layers import Reshape
-from keras.layers import BatchNormalization
-from keras.layers import GlobalAveragePooling2D
-from keras.layers import GlobalMaxPooling2D
-from keras.layers import Conv2D
-from keras import initializers
-from keras import regularizers
-from keras import constraints
-from keras.utils import conv_utils
-from keras.utils.data_utils import get_file
-from keras.engine.topology import get_source_inputs
-from keras.engine import InputSpec
-from keras.applications import imagenet_utils
-from keras.applications.imagenet_utils import _obtain_input_shape
-from keras.applications.imagenet_utils import decode_predictions
-from keras import backend as K
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input
+from tensorflow.keras.layers import Activation
+from tensorflow.keras.layers import Dropout
+from tensorflow.keras.layers import Reshape
+from tensorflow.keras.layers import BatchNormalization
+from tensorflow.keras.layers import GlobalAveragePooling2D
+from tensorflow.keras.layers import GlobalMaxPooling2D
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras import initializers
+from tensorflow.keras import regularizers
+from tensorflow.keras import constraints
+from tensorflow.keras.utils import conv_utils
+from tensorflow.keras.utils.data_utils import get_file
+from tensorflow.keras.engine.topology import get_source_inputs
+from tensorflow.keras.engine import InputSpec
+from tensorflow.keras.applications import imagenet_utils
+from tensorflow.keras.applications.imagenet_utils import _obtain_input_shape
+from tensorflow.keras.applications.imagenet_utils import decode_predictions
+from tensorflow.keras import backend as K
 
 from models.attention_module import attach_attention_module
 
