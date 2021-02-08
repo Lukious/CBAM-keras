@@ -12,19 +12,16 @@ from __future__ import division
 import warnings
 
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers.core import Dense, Dropout, Activation, Reshape
-from tensorflow.keras.layers.convolutional import Conv2D, Conv2DTranspose, UpSampling2D
-from tensorflow.keras.layers.pooling import AveragePooling2D, MaxPooling2D
-from tensorflow.keras.layers.pooling import GlobalAveragePooling2D
+from tensorflow.keras.layers import Dense, Dropout, Activation, Reshape
+from tensorflow.keras.layers import Conv2D, Conv2DTranspose, UpSampling2D
+from tensorflow.keras.layers import AveragePooling2D, MaxPooling2D
+from tensorflow.keras.layers import GlobalAveragePooling2D
 from tensorflow.keras.layers import Input
-from tensorflow.keras.layers.merge import concatenate
-from tensorflow.keras.layers.normalization import BatchNormalization
+from tensorflow.keras.layers import concatenate
+from tensorflow.keras.layers import BatchNormalization
 from tensorflow.keras.regularizers import l2
-from tensorflow.keras.utils.layer_utils import convert_all_kernels_in_model, convert_dense_weights_data_format
-from tensorflow.keras.utils.data_utils import get_file
-from tensorflow.keras.engine.topology import get_source_inputs
-from tensorflow.keras.applications.imagenet_utils import _obtain_input_shape
-from tensorflow.keras.applications.imagenet_utils import decode_predictions
+from tensorflow.keras.utils import get_source_inputs
+from keras_applications.imagenet_utils import _obtain_input_shape
 import tensorflow.keras.backend as K
 
 from models.attention_module import attach_attention_module

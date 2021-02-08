@@ -33,11 +33,10 @@ from tensorflow.keras.layers import GlobalMaxPooling2D
 from tensorflow.keras.layers import Input
 from tensorflow.keras.layers import Lambda
 from tensorflow.keras.layers import MaxPooling2D
-from tensorflow.keras.utils.data_utils import get_file
-from tensorflow.keras.engine.topology import get_source_inputs
+from tensorflow.keras.utils import get_file
+from tensorflow.keras.utils import get_source_inputs
 from tensorflow.keras.applications import imagenet_utils
-from tensorflow.keras.applications.imagenet_utils import _obtain_input_shape
-from tensorflow.keras.applications.imagenet_utils import decode_predictions
+from keras_applications.imagenet_utils import _obtain_input_shape
 from tensorflow.keras import backend as K
 
 from models.attention_module import attach_attention_module

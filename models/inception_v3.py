@@ -30,11 +30,10 @@ from tensorflow.keras.layers import MaxPooling2D
 from tensorflow.keras.layers import AveragePooling2D
 from tensorflow.keras.layers import GlobalAveragePooling2D
 from tensorflow.keras.layers import GlobalMaxPooling2D
-from tensorflow.keras.engine.topology import get_source_inputs
-from tensorflow.keras.utils.data_utils import get_file
+from tensorflow.keras.utils import get_source_inputs
+from tensorflow.keras.utils import get_file
 from tensorflow.keras import backend as K
-from tensorflow.keras.applications.imagenet_utils import decode_predictions
-from tensorflow.keras.applications.imagenet_utils import _obtain_input_shape
+from keras_applications.imagenet_utils import _obtain_input_shape
 
 from models.attention_module import attach_attention_module
 

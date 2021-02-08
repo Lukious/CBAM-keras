@@ -124,7 +124,7 @@ def resnet_v1(input_shape, depth, num_classes=10, attention_module=None):
             # attention_module
             if attention_module is not None:
                 y = attach_attention_module(y, attention_module)
-            x = keras.layers.add([x, y])
+            x = tensorflow.keras.layers.add([x, y])
             x = Activation('relu')(x)
         num_filters *= 2
 
